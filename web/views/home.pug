@@ -1,0 +1,41 @@
+extends _layout
+
+block content
+  .ibm-columns
+    .ibm-col-5-1
+    .ibm-col-5-3
+      .network-container
+        .network-circle
+        .ibm-card.insurance-peer
+          .ibm-card__content
+              a(href='/insurance')
+                h3.ibm-h3 #{ __('Insurance') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/insurance/self-service')
+                  | #{ __('Go To The Claim Self-Service') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/insurance/claim-processing')
+                  | #{ __('Go To The Claim Processing') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/insurance/contract-management')
+                  | #{ __('Go To The Contract Management') }
+        .ibm-card.doctor-peer
+          .ibm-card__content
+            a(href='/doctor')
+              h3.ibm-h3 #{ __('Doctor') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/doctor') #{ __('Go To The Doctor Peer') }
+        .ibm-card.patient-peer
+          .ibm-card__content
+            a(href='/patient')
+              h3.ibm-h3 #{ __('Patient') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/patient')
+                | #{ __('Go To The Patient Peer') }
+        .ibm-card.repair-doctor-peer
+          .ibm-card__content
+            a(href='/repair-doctor')
+              h3.ibm-h3 #{ __('Repair Doctor') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/repair-doctor')
+                | #{ __('Go To The Repair Doctor Peer') }
